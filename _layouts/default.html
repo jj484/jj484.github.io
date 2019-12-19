@@ -25,12 +25,27 @@
     
   </head>
   <body>
-    {% include header.html %}
-    
-    {{ content }}
-    
-    {% include footer.html %}
+    <div class="container-fluid">
+      
+      
+      {% include header.html %}
+      
+      <div class="row">
+        <div class="col-8">
+          {{ content }}
+        </div>
+        <div class="col-4">
+          SIDERBAR
+        </div>
+      
 
+      
+      </div>
+      
+      
+      
+      {% include footer.html %}
+    </div>
 
 
 
